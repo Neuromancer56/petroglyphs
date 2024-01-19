@@ -49,7 +49,7 @@ for i = 1, pcount do
 		clust_num_ores = 1,
 		clust_size     = 1,
 		y_min          = -31000,
-		y_max          = -0,
+		y_max          = 31000,
 	})
 
 end
