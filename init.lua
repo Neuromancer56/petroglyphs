@@ -19,7 +19,9 @@ for i = 1, pcount do
 			"default_desert_stone.png",			
 			"default_desert_stone.png",},
 		groups = {cracky=3, stone=1},
-		sounds = default.node_sound_stone_defaults(),
+		--sounds = default.node_sound_stone_defaults(),
+		sounds = default.node_sound_stone_defaults({
+		footstep = {name = "petroglyph"..i, gain = 0.1},})
 		})
 	else
 		minetest.register_node("petroglyphs:petroglyph"..i, {
@@ -33,7 +35,9 @@ for i = 1, pcount do
 			"petroglyph"..i..".png",
 			"petroglyph"..i..".png",},
 			groups = {cracky=3, stone=1},
-			sounds = default.node_sound_stone_defaults(),
+			--sounds = default.node_sound_stone_defaults(),
+					sounds = default.node_sound_stone_defaults({
+		footstep = {name = "petroglyph"..i, gain = 0.1},})
 		})
 	end
 
